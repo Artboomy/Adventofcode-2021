@@ -2,7 +2,7 @@ use std::fs;
 
 // https://adventofcode.com/2021/day/1
 pub fn solve() {
-    let contents = fs::read_to_string("input.txt").expect("Something went wrong reading the file");
+    let contents = fs::read_to_string("day1.txt").expect("Something went wrong reading the file");
     let nums = contents
         .split('\n')
         .map(|x| x.parse::<i32>().unwrap_or(0))
